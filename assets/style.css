@@ -57,8 +57,9 @@ header {
 	align-items: center;
 	position: relative;
 }
+
 ul.nav-links input {
-    display: none;
+	display: none;
 }
 
 .nav-links a {
@@ -265,7 +266,7 @@ ul.nav-links input {
 /*------------------------------------------------------------- quicSurvey section---------------------------------------------------- */
 
 .quicSurvey {
-	background: #4a0ce8;
+	background: #E8B70C;
 }
 
 .quicSurvey-content {
@@ -561,6 +562,7 @@ ul.nav-links input {
 .slideImg {
 	background: #fff;
 	border-radius: 15px;
+	position: relative;
 }
 
 .slideImg img {
@@ -586,6 +588,43 @@ ul.nav-links input {
 	padding: 20px 0 20px 0;
 }
 
+.overlay {
+	background: linear-gradient(90deg, rgba(9, 118, 121, 0) 33%, rgba(0, 0, 0, 1) 92%);
+	position: absolute;
+	height: 70%;
+	width: 100%;
+	border-radius: 15px;
+	top: 0;
+}
+
+.round-imgName p {
+	position: absolute;
+	top: 176px;
+	left: 84px;
+	font-weight: 350;
+font-size: 16px;
+line-height: 32px;
+/* identical to box height, or 200% */
+
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+}
+
+.round-img {
+	width: 50px;
+	position: absolute;
+	top: 161px;
+	left: 20px;
+}
+
+.round1-img {
+	width: 50px;
+	position: absolute;
+	top: 161px;
+	right: 20px;
+}
 
 /*-------------------------------------------- free-courses--------------------------------------------- */
 .free-courses {
@@ -614,6 +653,7 @@ ul.nav-links input {
 	border: 1px solid #C2C8D3;
 	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
+	width: 67%;
 }
 
 .Free-course-Slider-container input {
@@ -636,7 +676,13 @@ ul.nav-links input {
 }
 
 .Free-courses h2 {
-	padding: 40px 81px;
+	margin: 25px;
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 28px;
+	color: #294587;
+	width: 50%;
+
 
 }
 
@@ -676,7 +722,13 @@ ul.nav-links input {
 	color: white;
 }
 
-
+.video-founder-overlay {
+	background: linear-gradient(90deg, rgba(9, 118, 121, 0) 33%, rgba(0, 0, 0, 1) 92%);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+}
 
 .video-founder {
 	position: relative;
@@ -717,7 +769,7 @@ ul.nav-links input {
 	width: 528px;
 	text-align: start;
 	/* float: right; */
-	right: 0;
+	right: 121px;
 	padding-top: 135px;
 }
 
@@ -761,8 +813,8 @@ ul.nav-links input {
 
 .home {
 	margin: 80px 0 0 0;
-	position: relative;
-	background-image: url('./img/25336\ 1.jpg');
+	/* position: relative; */
+	/* background-image: url('./img/25336\ 1.jpg'); */
 	height: 100wh;
 }
 
@@ -775,6 +827,8 @@ ul.nav-links input {
 .hero_sliderContent {
 	display: flex;
 	justify-content: space-between;
+	position: absolute;
+	top: 0;
 }
 
 .hero_sliderImg {
@@ -793,6 +847,7 @@ ul.nav-links input {
 
 
 
+
 }
 
 .hero_slider-rightContent h1 {
@@ -804,7 +859,7 @@ ul.nav-links input {
 	text-align: center;
 	text-transform: uppercase;
 
-	color: #FFFFFF;
+	color: #fff;
 
 }
 
@@ -817,7 +872,7 @@ ul.nav-links input {
 	text-align: center;
 	text-transform: uppercase;
 
-	color: #FFFFFF;
+	color: #fff;
 }
 
 .hero_slider-rightContent h3 {
@@ -855,6 +910,48 @@ ul.nav-links input {
 
 }
 
+/* vedio url */
+video#background-video {
+	width: 99vw;
+	height: 85vh;
+	object-fit: cover;
+
+	top: 0;
+	left: 0;
+}
+
+/* page content */
+
+.background-video-container {
+
+	position: relative;
+
+}
+
+.hero_sliderContent-overlay {
+	position: absolute;
+	bottom: 0;
+	background: rgb(0, 0, 0);
+	color: #f1f1f1;
+	width: 100%;
+	transition: .5s ease;
+	opacity: 0;
+	color: white;
+
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+.background-video-container .hero_sliderContent-overlay {
+	opacity: 0.7;
+	top: 0;
+	bottom: 0;
+	height: auto;
+	background-color: #000;
+}
+
+
 /* -------------------------------------webinar */
 .webinar {
 	background: #0A214F;
@@ -876,19 +973,44 @@ ul.nav-links input {
 	line-height: 56px;
 	color: #E8B80D;
 }
-
-.date-time {
+.date-time
+{
 	display: flex;
+    padding: 0 0 24px 0;
 }
 
-.date input {
-	color: #fff;
-	width: 300px;
-	height: 40px;
-	margin: 0 0px 20px 20px;
-	display: block;
-	background: rgba(255, 255, 255, 0.05);
-	border: none;
+.time {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 5px 20px;
+    width: 300px;
+    margin-right: 30px;
+	font-weight: 350;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height, or 120% */
+
+letter-spacing: 0.15px;
+
+color: #FFFFFF;
+	/* background: rgba(255, 255, 255, 0.05); */
+	
+}
+
+.date {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 5px 20px;
+    width: 300px;
+    margin-right: 30px;
+	font-weight: 350;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height, or 120% */
+
+letter-spacing: 0.15px;
+
+color: #FFFFFF;
+	/* background: rgba(255, 255, 255, 0.05); */
+	
 }
 
 input::placeholder {
@@ -1022,6 +1144,7 @@ input::placeholder {
 
 .webinar-rightContent {
 	padding-top: 30px;
+	position: relative;
 
 }
 
@@ -1038,7 +1161,7 @@ input::placeholder {
 }
 
 .form-heading h4 {
-	padding: 122px 0 0 0;
+	padding: 125px 0 0 0;
 	font-weight: 350;
 	font-size: 24px;
 	line-height: 32px;
@@ -1053,14 +1176,28 @@ input::placeholder {
 .form input {
 	color: #fff;
 	background: rgba(255, 255, 255, 0.05);
-
-
+	width: 100%;
+	margin: 20px 0
 }
 
 .webinar-rightContent-btn {
-	margin-top: 74px;
+	margin-top: 30px;
 }
 
+.limited {
+    /* width: 120px; */
+    background-color: #E8B70C;
+    /* padding: initial; */
+    position: top;
+    position: absolute;
+    top: 70px;
+    display: flex;
+    padding: 10px 10px;
+}
+.limited-img{
+	width: 70px;
+	padding: 0 10px;
+}
 /* input */
 .material-textfield {
 	position: relative;
@@ -1118,4 +1255,50 @@ input:empty:not(:placeholder-shown)+label {
 
 input:empty::-webkit-input-placeholder {
 	opacity: 0;
+}
+
+/* ----------------- */
+
+/* selfMade-content --------------------- */
+.selfMade-video {
+	background-color: #E8B70C;
+	/* border-top: 2px solid gray; */
+}
+
+
+
+.selfMade-video .bgimg  {
+	width: 50%;
+	position: relative;
+	padding-top: 87px;
+}
+
+
+
+
+.selfMade-content {
+	display: flex;
+    justify-content: space-between;
+ 
+
+}
+
+.selfMade-content .left-content h1 {
+	width: 371px;
+	padding-top: 148px;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 84px;
+	color: #294587;
+	margin-left: 50px;
+	position: absolute;
+    top: 115px;
+    left: 10px;
+}
+
+.selfMade-content .right-content {
+	width: 730px;
+	position: absolute;
+	top: 116px;
+    left: 86%;
 }

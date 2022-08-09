@@ -6,8 +6,8 @@
             speed: 300,
             slidesToShow: 3,
             slidesToScroll: 1,
-            // autoplay:true,
-            // autoplaySpeed:1500,
+            autoplay:true,
+            autoplaySpeed:1500,
             arrows:false,
             paushOnHover:false,
             draggable: true,
@@ -36,9 +36,7 @@
                   slidesToScroll: 1
                 }
               }
-              // You can unslick at a given breakpoint now by adding:
-              // settings: "unslick"
-              // instead of a settings object
+            
             ]
           });
 
@@ -52,8 +50,8 @@
           speed: 300,
           slidesToShow: 4,
           slidesToScroll: 1,
-          // autoplay:true,
-          // autoplaySpeed:1500,
+          autoplay:true,
+          autoplaySpeed:1500,
           arrows:false,
           paushOnHover:false,
           draggable: true,
@@ -109,14 +107,29 @@ $(document).ready(function () {
 
 });
 
-// modal
+// signup modal
 $(document).ready(function(){
   $("#showModal").click(function(){
     $('.modal-box').css({'visibility':'visible','opacity':'1'});
   });
 });
 $(document).ready(function(){
+  $(".closebtn").click(function(){
+  
+    $('.modal-box').css({'visibility':'hidden','opacity':'0'});
+  });
+});
+
+// Upload cv modal
+
+$(document).ready(function(){
   $("#showregisterForm").click(function(){
-    $('.modal-box').css({'visibility':'visible','opacity':'1'});
+    $('.modal-bx').css({'visibility':'visible','opacity':'1'});
+  });
+});
+$(document).ready(function(){
+  $(".closebtn").click(function(){
+ 
+    $('.modal-bx').css({'visibility':'hidden','opacity':'0'});
   });
 });

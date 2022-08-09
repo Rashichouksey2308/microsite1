@@ -108,3 +108,15 @@ $(document).ready(function () {
   });
 
 });
+
+// modal
+$(document).ready(function(){
+  $("#showModal").click(function(){
+    $('.modal-box').css({'visibility':'visible','opacity':'1'});
+  });
+});
+$(document).ready(function(){
+  $("#showregisterForm").click(function(){
+    $('.modal-box').css({'visibility':'visible','opacity':'1'});
+  });
+});

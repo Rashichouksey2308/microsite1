@@ -653,7 +653,7 @@ color: #FFFFFF;
 	border: 1px solid #C2C8D3;
 	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
-	width: 67%;
+	width: 75%;
 }
 
 .Free-course-Slider-container input {
@@ -676,7 +676,7 @@ color: #FFFFFF;
 }
 
 .Free-courses h2 {
-	margin: 25px;
+	margin: 30px;
 	font-weight: 800;
 	font-size: 20px;
 	line-height: 28px;
@@ -813,9 +813,9 @@ color: #FFFFFF;
 
 .home {
 	margin: 80px 0 0 0;
-	/* position: relative; */
+	position: relative;
 	/* background-image: url('./img/25336\ 1.jpg'); */
-	height: 100wh;
+	overflow: hidden;
 }
 
 .header-section {
@@ -828,15 +828,14 @@ color: #FFFFFF;
 	display: flex;
 	justify-content: space-between;
 	position: absolute;
-	top: 0;
+	bottom: 0;
 }
 
 .hero_sliderImg {
-	width: 45.5%;
+	width: 40.5%;
 }
 
 .hero_sliderImg img {
-
 	vertical-align: middle;
 
 }
@@ -845,20 +844,14 @@ color: #FFFFFF;
 	padding: 218px 0 207px 0;
 	width: 43%;
 
-
-
-
 }
 
 .hero_slider-rightContent h1 {
 	font-weight: 700;
 	font-size: 64px;
 	line-height: 91px;
-	/* or 142% */
-
 	text-align: center;
 	text-transform: uppercase;
-
 	color: #fff;
 
 }
@@ -867,11 +860,8 @@ color: #FFFFFF;
 	font-weight: 700;
 	font-size: 84px;
 	line-height: 91px;
-	/* or 142% */
-
 	text-align: center;
 	text-transform: uppercase;
-
 	color: #fff;
 }
 
@@ -883,7 +873,6 @@ color: #FFFFFF;
 	text-align: center;
 	text-transform: capitalize;
 	color: #E8B70C;
-
 }
 
 .hero_slider-rightContent h1 {
@@ -891,11 +880,8 @@ color: #FFFFFF;
 	font-weight: 700;
 	font-size: 64px;
 	line-height: 91px;
-	/* or 142% */
-
 	text-align: center;
 	text-transform: uppercase;
-
 	color: #FFFFFF;
 
 }
@@ -912,19 +898,16 @@ color: #FFFFFF;
 
 /* vedio url */
 video#background-video {
-	width: 99vw;
-	height: 85vh;
+	width: 100%;
+	height: 700px;
 	object-fit: cover;
-
-	top: 0;
-	left: 0;
 }
 
 /* page content */
 
 .background-video-container {
 
-	position: relative;
+	
 
 }
 
@@ -941,17 +924,24 @@ video#background-video {
 	font-size: 20px;
 	padding: 20px;
 	text-align: center;
-}
-
-.background-video-container .hero_sliderContent-overlay {
 	opacity: 0.7;
 	top: 0;
 	bottom: 0;
 	height: auto;
-	background-color: #000;
 }
 
-
+.IrisSoftware {
+	background-color: #E8B80D;
+	position: relative;
+	/* background-image: url('./img/25336\ 1.jpg'); */
+	overflow: hidden;
+}
+.IrisSoftwareContent{
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	bottom: -85px;
+}
 /* -------------------------------------webinar */
 .webinar {
 	background: #0A214F;
@@ -1183,7 +1173,16 @@ input::placeholder {
 .webinar-rightContent-btn {
 	margin-top: 30px;
 }
+.limited h1{
+	font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+/* or 117% */
 
+
+color: #294587;
+
+}
 .limited {
     /* width: 120px; */
     background-color: #E8B70C;

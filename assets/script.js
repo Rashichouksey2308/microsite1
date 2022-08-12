@@ -1,4 +1,22 @@
 
+        $(document).ready(function(){
+          $('.img-area').slick({
+            margin:10,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            // autoplay:true,
+            autoplaySpeed:2000,
+            arrows:false,
+            fade: true,
+            cssEase: 'ease-in',
+            touchMove:true,
+          
+
+          }) 
+        });
+
         $('.custome-logos').slick({
             margin:10,
             dots: true,
@@ -6,8 +24,8 @@
             speed: 300,
             slidesToShow: 3,
             slidesToScroll: 1,
-            autoplay:true,
-            autoplaySpeed:1500,
+            // autoplay:true,
+            // autoplaySpeed:1500,
             arrows:false,
             paushOnHover:false,
             draggable: true,
@@ -129,7 +147,93 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
   $(".closebtn").click(function(){
- 
+    console.log("closed");
     $('.modal-bx').css({'visibility':'hidden','opacity':'0'});
   });
+});
+
+// link  modal
+
+$(document).ready(function(){
+  $(".link-modal").click(function(){
+    $('.link-modal-box').css({'visibility':'visible','opacity':'1'});
+  });
+});
+$(document).ready(function(){
+  $(".closebtn").click(function(){
+    console.log("closedbb");
+    $('.link-modal-box').css({'visibility':'hidden','opacity':'0'});
+  });
+});
+
+
+
+
+// vedio modal
+$(document).ready(function(){
+  $('#play-vedio-modal').click(function(){
+    $('.vedio-modal-box').css({'visibility':'visible','opacity':'1'});
+  });
+});
+
+$(document).ready(function(){
+  $('.vedio-closebtn').click(function(){
+   console.log("hhh");
+    $('.vedio-modal-box').css({'visibility':'hidden','opacity':'0'});
+
+  });
+
+  
+
+  
+});
+$(document).ready(function(){
+  $('.vedio-closebtn').click(function(){
+    $('iframe').attr("https://www.youtube.com/embed/tgbNymZ7vqY");
+
+  });
+
+  
+
+  
+});
+
+
+// marqee scrollable content
+$(function(){
+  var $mwo = $('.marquee-with-options');
+  $('.marquee').marquee();
+  $('.marquee-with-options').marquee({
+      speed: 50,
+      gap: 5,
+      delayBeforeStart: 0,
+      direction: 'up',
+      duplicated: true,
+      pauseOnHover: true
+  });
+
+  //Direction upward
+  $('.marquee-vert').marquee({
+      direction: 'up',
+      speed: 1500
+  });
+
+  //pause and resume links
+  $('.pause').click(function(e){
+      e.preventDefault();
+      $mwo.trigger('pause');
+  });
+  $('.resume').click(function(e){
+      e.preventDefault();
+      $mwo.trigger('resume');
+  });
+  //toggle
+  $('.toggle').hover(function(e){
+      $mwo.trigger('pause');
+  },function(){
+      $mwo.trigger('resume');
+  })
+  .click(function(e){
+      e.preventDefault();
+  })
 });

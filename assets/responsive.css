@@ -238,11 +238,13 @@
 		padding-top: 20px;
 
 	}
+
 	/* webinar */
 	.webinar-content {
 		display: block;
 	}
-	.form{
+
+	.form {
 		width: 100%;
 	}
 }

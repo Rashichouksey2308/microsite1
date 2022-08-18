@@ -354,7 +354,17 @@ ul.nav-links input {
 	margin: 10px 0 0 10px;
 	color: #FFFFFF;
 }
-
+::-webkit-file-upload-button {
+	border: none;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #0A214F;
+	border-radius: 30px;
+	padding: 14px 20px;
+  }
 /* ---------------------------------------------.some-fun-------------------------------------------------  */
 .some-fun {
 	background-color: #E8B80D;
@@ -1432,7 +1442,7 @@ video#background-video {
 }
 
 .closebtn {
-	float: left;
+	float: right;
 	padding: 0px 0 20px 0;
 }
 
